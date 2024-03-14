@@ -4,12 +4,17 @@
 let array = [];
 console.log(array);
 let somma = 0;
-let numMax = 50;
+const numMax = 50;
 
 
 while (somma < numMax) {
     let number = parseInt(prompt("Inserisci un numero"));
     console.log(number);
     somma += number;
+    array.push(number);
     console.log(somma);
+    let result = document.getElementById('result');
+    result.innerHTML = '';
+    result.innerHTML = "La somma degli elementi dell'array è maggiore di 50!";
+    console.log(array);
 }
