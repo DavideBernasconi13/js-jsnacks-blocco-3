@@ -5,15 +5,19 @@
 // variabile n 
 let n = parseInt(prompt('Inserisci un numero'));
 console.log(n);
-// ciclo for per replicare gli array
 
 // funzione crea array 
 function creaArray() {
     let newArray = [];
     let elArray = 10;
-    for (let i = 0; i <= elArray; i++) {
-        newArray.push((Math.random() * 100);
+    for (let i = 0; i < elArray; i++) {
+        newArray.push(parseInt(Math.random() * 100));
     }
     console.log(newArray);
 }
-creaArray();
+
+
+// ciclo for per replicare gli array
+for (let i = 0; i < n; i++) {
+    creaArray();
+}
